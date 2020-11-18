@@ -1,0 +1,98 @@
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color: #0C1C3C;
+   color: #f4f4f4;
+}
+/* Encabezado */
+header{
+   text-align: center;
+   font-size: 22px;
+   font-style: oblique;
+   text-decoration: underline;
+   text-decoration-color: #D25C79;
+}
+/* Contenedor principal de la App */
+#container{
+   display: flex;
+   width: 95%;
+   margin: 0 auto;
+   margin-top: 50px;
+}
+/* Seccion de Datos */
+#datos{
+   margin-right: 20px;
+   max-height: 200px;;
+}
+#encabezado{
+   background-color: #fa755b;
+   border-radius: 10px 10px 0 0;
+   padding: 2px 0;
+   text-align: center;
+   font-style: oblique;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #f4f4f4;
+   padding: 15px;
+   height: 180px;
+   width: 200px;
+}
+form > input{
+   margin-bottom: 20px;
+   border: none;
+   border-bottom: solid #0C1C3C 1px;
+   width: 100%;
+   outline: none;
+}
+/* Quitar los botones del imput tipo number */
+input[type=number] { -moz-appearance:textfield; }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button 
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#guardar{
+   border: none;
+   background: linear-gradient(to right, #68E4BC 0%, #4AD0D1 99%);
+   border-radius: 5px;
+   font-size: 14px;
+   padding: 10px;
+   font-weight: bold;
+   width: 100%;
+   cursor: pointer;
+   text-align: center;
+   color: #f4f4f4;
+   box-shadow: 0 12px 12px -11px #0db4afb8;
+}
+/* Tarjeta Contacto */
+#lista-contactos{
+   display: flex;
+   flex-wrap: wrap;
+}
+.tarjeta{
+   margin: 10px;
+   background: #f4f4f4;
+   padding: 10px;
+   border-radius: 10px;
+   color: #0C1C3C;
+}
+#eliminar{
+   border: none;
+   background: linear-gradient(to right, #e46868 0%, #d14a4a 99%);
+   border-radius: 5px;
+   font-size: 12px;
+   padding: 10px;
+   font-weight: bold;
+   width: 100%;
+   cursor: pointer;
+   text-align: center;
+   color: #f4f4f4;
+}
