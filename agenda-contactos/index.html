@@ -12,24 +12,29 @@
       <h1>Agenda de Contactos</h1>
    </header>
 
+   <!-- Contenido de la pagina -->
    <div id="container">
-      <!-- app -->
+      <!-- formulario -->
+   
       <div id="datos">
          <div id="encabezado">
             <h3>Agregar Contacto</h3>
          </div>
+
          <form id="formulario">
-            <input id='nombre' type="text" placeholder="Nombre">
-            <input id='telefono' type="number" placeholder="Telefono">
-            <input id='email' type="email" placeholder="ejemplo@correo.com">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="telefono" placeholder="Telefono">
+            <input type="email" id="email" placeholder="ejemplo@correo.com">
             <input type="submit" value="Guardar" id="guardar">
          </form>
       </div>
-
+      <!-- espacio de la aegnda -->
       <div id="lista-contactos">
-
+         
       </div>
+
    </div>
-   <script src="./js/script.js" defer></script>
+
+   <script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 class Contacto{
-   constructor(nombre,telefono,correo){
+   constructor(nombre, telefono, correo){
       this.nombre = nombre,
       this.telefono = telefono,
       this.correo = correo
@@ -8,45 +8,47 @@ class Contacto{
 
 class Agenda {
   agregarContacto(contacto) {
-    const listaContactos = document.getElementById("lista-contactos");
-    const element = document.createElement("div");
-    element.classList.add("tarjeta")
-    element.innerHTML = `
-      <p><strong>Nombre: </strong> ${contacto.nombre}</p>
-      <p><strong>Telefono: </strong> ${contacto.telefono}</p>
-      <p><strong>E-mail: </strong> ${contacto.correo}</p>
+     const listaContactos = document.getElementById("lista-contactos");
+     const tarjeta = document.createElement("div");
+     tarjeta.classList.add("tarjeta");
+
+     tarjeta.innerHTML += `
+      <p><strong>Nombre: </strong>${contacto.nombre}</p>
+      <p><strong>Telefono: </strong>${contacto.telefono}</p>
+      <p><strong>E-mail: </strong>${contacto.correo}</p>
       <button id='eliminar'>Eliminar</button>
-      `;
-      
-    listaContactos.appendChild(element);
+     `;
+
+      listaContactos.appendChild(tarjeta);
   }
-  eliminarContacto(elemento) {
-     if (elemento.id === "eliminar") {
-       elemento.parentElement.remove();
-     }
+  
+  eliminarContacto(elemento){
+   if(elemento.id === "eliminar"){
+      elemento.parentElement.remove();
+   }
   }
 
-  limpiar(){
+  limpiarFormulario(){
    const formulario = document.getElementById("formulario");
    formulario.reset();
   }
 }
 
-document.getElementById("guardar").addEventListener("click",function(e){
+document.getElementById("guardar").addEventListener("click", function(e){
    const nombre = document.getElementById("nombre").value;
    const telefono = document.getElementById("telefono").value;
-   const correo = document.getElementById("email").value;
-   
-   const contacto = new Contacto(nombre, telefono, correo);
+   const email = document.getElementById("email").value;
+
+   const contacto = new Contacto(nombre, telefono, email);
    const agenda = new Agenda;
 
    agenda.agregarContacto(contacto);
-   agenda.limpiar()
+   agenda.limpiarFormulario();
 
-   e.preventDefault();
+   e.preventDefault()
 })
 
-document.getElementById("lista-contactos").addEventListener("click", function (e) {
+document.getElementById("lista-contactos").addEventListener("click",function(e){
    const agenda = new Agenda;
    agenda.eliminarContacto(e.target);
-});
+})
