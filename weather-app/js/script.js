@@ -1,16 +1,25 @@
-const myApiKey = "245d13d593a4809e9fbdeee8ffd5b3bf";
-const cityName = 'Tegucigalpa'
-const url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${myApiKey}&lang=es`;
+const myApiKey = "5aa499c6bd33c7420b29beb036e1cc6b";
+const btnVer = document.querySelector("button");
 
-fetch(url)
-.then(response=>response.json())
-.then(clima=>mostrarClima(clima))
+btnVer.addEventListener("click",obtenerDatos)
 
-function mostrarClima(clima){
+function obtenerDatos(){
+   const txtCiudad = document.getElementById("ciudad").value;
+   const url = `http://api.openweathermap.org/data/2.5/weather?q=${txtCiudad}&appid=${myApiKey}&lang=es`;
+
+   fetch(url)
+     .then((response) => response.json())
+     .then((clima) => mostrarClima(clima))
+   
+}
+
+ function mostrarClima(clima) {
    const ciudad = clima.name;
    const temperatura = clima.main.temp;
-   const textCiudad = document.querySelector("#ciudad");
-   
-   console.log(clima)
-   textCiudad.textContent = ciudad;
-}
+   const divDatos = document.querySelector("#datos");
+
+   divDatos.innerHTML = `
+      <h2>${ciudad}</h2>
+      <h2>${temperatura} ºF</h2>
+   `;
+ }
