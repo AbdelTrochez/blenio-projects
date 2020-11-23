@@ -1,0 +1,19 @@
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+   
+}
+
+#tarjeta{
+   margin: 0 auto;
+   margin-top: 50px;
+   width: 40%;
+   border: #0C1C3C solid 2px;
+   text-align: center;
+   background-color: #f4f4f4;
+   padding-bottom: 15px;
+   border-radius: 10px;
+   color: #0C1C3C;
+}

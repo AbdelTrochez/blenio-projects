@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+  background-color: #20445f;
+  color: white;
+  position: relative;
+  bottom: 25px;
+  height: 50px;
+}
+
+.contenedor {
+  padding: 100px auto;
+  height: 450px;
+  background-image: url(logo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.campeon {
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+  position: relative;
+  bottom: 47px;
+  background: linear-gradient(to right, rgb(121, 211, 255), rgb(74, 74, 74))
+  repeat scroll 0% 0%;
+}
+
+.tarjeta {
+  width: 300px;
+  height: 400px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: solid 3px red;
+  background-color: black;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tarjeta>img{
+  width: 80%;
+}
