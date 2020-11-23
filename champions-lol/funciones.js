@@ -1,15 +1,16 @@
 const urlApiLol ="http://ddragon.leagueoflegends.com/cdn/10.23.1/data/en_US/champion.json";
 const urlImgLol = "http://ddragon.leagueoflegends.com/cdn/10.23.1/img/champion/";
+const misCampeones = ["Aatrox", "Vayne", "Samira", "Diana","Amumu", "Alistar","Bard"];
 
 fetch(urlApiLol)
   .then((respuesta) => respuesta.json())
   .then((datos) => mostrarCampeon(Object.values(datos.data)));
 
 function mostrarCampeon(datos) {
-  const campeones = datos.filter(campeon=>
-    campeon.name === "Aatrox" || campeon.name === "Vayne" || campeon.name === "Samira" ||campeon.name === "Diana"
-  )
-  console.log(campeones)
+  console.log(datos)
+  const campeones = datos.filter((campeon) =>
+    misCampeones.find((miCampeon) => miCampeon===campeon.name)
+  );
   
   const panelCampeones = document.querySelector(".campeon");
   

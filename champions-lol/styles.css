@@ -1,13 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 h1 {
   text-align: center;
   background-color: #20445f;
   color: white;
-  position: relative;
-  bottom: 25px;
   height: 50px;
 }
-
-.contenedor {
+.logo-LoL {
   padding: 100px auto;
   height: 450px;
   background-image: url(logo.jpg);
@@ -15,21 +17,18 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .campeon {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 500px;
-  position: relative;
-  bottom: 47px;
+  padding: 20px;
   background: linear-gradient(to right, rgb(121, 211, 255), rgb(74, 74, 74))
   repeat scroll 0% 0%;
 }
-
 .tarjeta {
   width: 300px;
   height: 400px;
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 5px;
   border: solid 3px red;
   background-color: black;
