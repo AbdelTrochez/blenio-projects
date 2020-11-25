@@ -1,6 +1,6 @@
 const urlApiLol ="http://ddragon.leagueoflegends.com/cdn/10.23.1/data/en_US/champion.json";
 const urlImgLol = "http://ddragon.leagueoflegends.com/cdn/10.23.1/img/champion/";
-const misCampeones = ["Aatrox", "Vayne", "Samira", "Diana","Amumu", "Alistar","Bard"];
+const misCampeones = ["Aatrox", "Vayne", "Samira", "Diana","Amumu", "Alistar","Bard","Jhin"];
 
 fetch(urlApiLol)
   .then((respuesta) => respuesta.json())
