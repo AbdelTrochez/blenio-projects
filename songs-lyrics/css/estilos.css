@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+h1{
+   font-family: 'Major Mono Display', monospace;
+}
+
+.form-control{
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px #ee5f5b solid;
+}
+
+.form-control:focus{
+   background-color: inherit;
+   color: #fff;
+}
+
+#lyrics{
+   line-height: 2.5em;
+}
