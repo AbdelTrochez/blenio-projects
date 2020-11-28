@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- iconos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav-wrapper white">
+    <div class="container">
+      <a href="#!" class="brand-logo">
+        <img src="./images/logo.svg" alt="" style="width: 70%;">
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="black-text" href="#">Features</a></li>
+        <li><a class="black-text" href="#">Team</a></li>
+        <li><a class="black-text" href="#">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Sign In</a></li>
+  </ul>
+
+  <!-- Bloque 1 -->
+  <div class="row">
+    <div class="container">
+      <!-- Columna de Texto -->
+      <div class="col s12 l6">
+          <h3>All your files in one secure location, accessible anywhere.</h3>
+          
+          <p>Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.</p>
+          
+          <div class="row">
+            <div class="col s12 l8">
+                <input placeholder="Enter your e-mail" id="first_name" type="text" class="validate">
+            </div>
+            <div class="col s12 l4">
+              <a class="waves-effect waves-light btn-large blue darken-4">Get Started</a>
+            </div>
+          </div>
+      </div>
+      <!-- Columna de Imagen -->
+      <div class="col s12 l6">
+        <img src="./images/illustration-1.svg" alt="Ilustracion 1" class="responsive-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bloque 2 -->
+  <div class="row">
+    <div class="container">
+      <!-- Columna Texto -->
+      <div class="col s12 l6">
+        <h3>Stay productive, wherever you are</h3>
+        <p>Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.</p>
+
+        <p>Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required!</p>
+
+        <a class="waves-effect waves-teal btn-flat teal-text text-accent-3">See how Fylo works <i class="material-icons">play_arrow</i></a>
+        
+        <!-- card -->
+        <div class="card">
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+              little markup to use effectively.</p>
+          </div>
+          <div class="card-tabs">
+            
+          </div>
+        </div>
+      </div>
+      <!-- columna Imagen -->
+      <div class="col s12 l6">
+        <img src="./images/illustration-2.svg" alt="Ilustracion 2" class="responsive-img">
+      </div>
+    </div>
+  </div>
+
+ 
+
+  
+
+  
+
+  
+
+  Fylo has improved our team productivity by an order of magnitude. Since 
+  making the switch our team has become a well-oiled collaboration machine.
+
+  Kyle Burton
+  Founder & CEO, Huddle
+
+  Get early access today
+
+  It only takes a minute to sign up and our free starter tier is extremely generous. 
+  If you have any questions, our support team would be happy to help you.
+
+  Get Started For Free
+
+  Phone: +1-543-123-4567
+  example@fylo.com
+
+  About Us
+  Jobs
+  Press
+  Blog
+
+  Contact Us
+  Terms
+  Privacy
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+    });
+  </script>
+</body>
+</html>
